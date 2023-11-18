@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#home{
+    width:100%;
+    height:100vh;
+    background-image: url("bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+nav{
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.418);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px 0px;
+    font-size: 15px;
+}
+#menu{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#close{
+    display:none;
+}
+#menu h3, .fa-solid{
+    margin:0px 10px;
+}
+nav h3:hover{
+    cursor:pointer;
+    color:coral;
+}
+#main{
+    text-transform:uppercase;
+    color:white;
+    font-size: 60px;
+    position:absolute;
+    top:50%;
+    left:70%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+}
+#main h1{
+    font-family: bebas Neue;
+}
+#main p{
+    font-weight: lighter;
+    font-size:40px;
+    font-family: bebas Neue;
+}
+#main i{
+    font-size:20px;
+    text-transform:lowercase;
+}
+#main a{
+    text-decoration: none;
+    color:coral;
+}
+#menubar{
+    display:none;
+}
+#batch{
+    position:absolute;
+    top:65%;
+    left:30%;
+    color:black;
+    text-align: center;
+    background-color: #f1c50e;
+    padding:30px;
+    font-family:sans-serif;
+    border-radius: 50%;
+}
+#batch h1{
+    font-size:50px;
+}
+#batch h3{
+    font-size: 25px;
+}
+#menubar:hover{
+    color:coral;
+}
+@media only screen and (max-width:560px){
+    #menu{
+        position:absolute;
+        top:7%;
+        right:5%;
+        flex-direction: column;
+        padding:20px;
+        background-color:  rgba(0, 0, 0, 0.681);
+        z-index: 1;
+        border-radius:15px;
+        display:none;
+        transition: all 1s;
+    }
+    #menu h3{
+        text-align: center;
+        padding:10px;
+        font-size: 20px;
+    }
+    #menubar{
+        display:block;
+    }
+    #close{
+        display: block;
+        font-weight: 700;
+        position:absolute;
+        top:10px;
+        right:10px;
+        border: 2px solid white;
+        border-radius: 20%;
+        padding:3px;
+    }
+    #sec-2-txt p{
+        font-size:15px;
+    }
+}
+@media only screen and (max-width:800px){
+    #main h1,#sec-1-txt h2,#sec-2-txt h2,#sec-2-txt h4{
+        font-size:50px;
+        text-align: center;
+        width:100%;
+    }
+    #sec-1-txt h2{
+        text-align: left;
+        width:70%;
+    }
+    #batch{
+        left:7%;
+    }
+    #sec-1-txt p{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:520px){
+    #batch{
+        zoom:55%;
+    }
+}
+
+#section-1{
+    height:100vh;
+    width:100%;
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-family:bebas neue;
+    color:white;
+    font-size: 60px;
+    position:relative;
+}
+#section-1 span{
+    color:#f1c50e;
+}
+#sec-1-txt{
+    position: absolute;
+    top:50%;
+    left:3%;
+}
+
+#section-2{
+    height:100vh;
+    width:100%;
+    background-image: url('bg3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-family:bebas neue;
+    color:white;
+    font-size: 60px;
+    position:relative;
+}
+#sec-2-txt{
+    width:50%;
+    position:absolute;
+    top:20%;
+    right:10%;
+}
+#sec-2-txt{
+    text-align: center;
+}
+#sec-2-txt p{
+    font-size:20px;
+}
+#sec-2-txt span{
+    color:#f1c50e;
+}
